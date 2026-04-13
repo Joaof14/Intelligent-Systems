@@ -2,6 +2,13 @@
 
 Este repositório reúne as práticas desenvolvidas na disciplina de Sistemas Inteligentes.
 
+## Autores
+
+- **Nome:** João Pedro Fernandes de Aquino  
+  **GitHub:** https://github.com/Joaof14
+- **Nome:** Anderson Carlos da Silva Morais  
+  **GitHub:** https://github.com/AndersonCSM
+
 ## Objetivo
 
 Registrar e organizar os códigos, experimentos e relatórios das atividades práticas realizadas ao longo da disciplina, facilitando o acompanhamento do aprendizado e a reutilização dos materiais.
@@ -25,16 +32,36 @@ Cada prática pode ter requisitos específicos (descritos em seus respectivos RE
 
 ---
 
-### Disciplina: Sistemas Inteligentes
+# Intelligent-Systems
 
-#### Author 1
+This repository contains the practical assignments developed for the Intelligent Systems course.
 
-- **Name:** João Pedro Fernandes de Aquino
-- **GitHub:** https://github.com/Joaof14
+## Authors
 
-#### Author 2
+- **Name:** João Pedro Fernandes de Aquino  
+  **GitHub:** https://github.com/Joaof14
+- **Name:** Anderson Carlos da Silva Morais  
+  **GitHub:** https://github.com/AndersonCSM
 
-- **Name:** Anderson Carlos da Silva Morais
-- **GitHub:** https://github.com/AndersonCSM
+## Purpose
 
-Ano: 2026
+To register and organize the code, experiments, and reports from the practical activities carried out during the course, making it easier to track learning and reuse materials.
+
+## Repository Structure
+
+- **LinearRegression/**: Linear Regression practice applied to real data (e.g., power plant output prediction).
+  - `Power_Plant_Linear_Regression.ipynb`: Notebook with the practice development.
+  - `readme.md`: Details and specific instructions for the practice.
+
+Other folders may be added as new practices are completed.
+
+## How to use
+
+1. Navigate to the desired practice folder.
+2. Follow the `readme.md` instructions in each practice to run the experiments.
+
+## Requirements
+
+Each practice may have specific requirements (described in their respective READMEs), but it is recommended to have Python 3.x and Jupyter Notebook installed.
+
+---
