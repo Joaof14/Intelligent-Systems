@@ -54,10 +54,7 @@ Disciplina: Sistemas Inteligentes — 2026
 ## Introduction and Context
 
 A combined cycle power plant (CCPP) is a high-efficiency facility that combines gas and steam turbines to generate electricity. It reuses the heat from the exhaust gases of the gas turbine (Brayton cycle) to produce steam in a boiler, driving a second turbine (Rankine cycle), significantly increasing efficiency. The main advantage is energy efficiency, which can reach 60%, reducing greenhouse gas emissions.
-
 Although it has high efficiency, the main technical challenge in using a CCPP lies in the integration, synchronization, and joint operation of two distinct thermodynamic cycles (Brayton and Rankine cycles) to function efficiently. Thus, the electrical power output (PE) is highly sensitive to environmental conditions.
-
-In this project, you must build a multiple linear regression mathematical model to predict energy production based on environmental sensors, allowing optimization of energy dispatch.
 
 ## Objective
 
