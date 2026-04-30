@@ -8,6 +8,10 @@ Doenças cardiovasculares são a principal causa de morte no mundo, responsávei
 
 Construir um modelo de regressão logística para prever a presença de doença cardíaca utilizando dados clínicos.
 
+## Descrição
+
+O notebook `Heart-Disease_Logistic_Regression.ipynb` contém todo o passo a passo, desde a análise exploratória até a avaliação do modelo e pode ser acessado [aqui]().
+
 ## Conjunto de Dados
 
 O projeto utiliza o dataset Heart Disease Cleveland (UCI Machine Learning Repository – disponível em https://archive.ics.uci.edu/dataset/45/heart+disease), com registros de 303 pacientes e 13 variáveis clínicas. Os diagnósticos foram confirmados por cateterismo cardíaco, o que garante rótulos confiáveis. As variáveis incluem:
@@ -27,10 +31,6 @@ O projeto utiliza o dataset Heart Disease Cleveland (UCI Machine Learning Reposi
 - **thal** — cintilografia de tálio: normal (3), defeito fixo / infarto prévio (6) ou defeito reversível / isquemia ativa (7);
 
 A saída é a variável target, que indica o diagnóstico original de 0 a 4, binarizado para 0 (sem doença) e 1 (com doença) antes do treinamento.
-
-## Descrição
-
-O notebook `Heart-Disease_Logistic_Regression.ipynb` contém todo o passo a passo, desde a análise exploratória até a avaliação do modelo.
 
 ## Como executar
 
@@ -68,6 +68,10 @@ Cardiovascular diseases are the leading cause of death worldwide, responsible fo
 
 Build a logistic regression model to predict the presence of heart disease using clinical data.
 
+## Description
+
+The notebook `Heart-Disease_Logistic_Regression.ipynb` contains the full workflow, from exploratory analysis to model evaluation.
+
 ## Dataset
 
 The project uses the Heart Disease Cleveland dataset (UCI Machine Learning Repository – available at https://archive.ics.uci.edu/dataset/45/heart+disease), with records from 303 patients and 13 clinical variables. The diagnoses were confirmed by cardiac catheterization, which ensures reliable labels. The variables include:
@@ -87,10 +91,6 @@ The project uses the Heart Disease Cleveland dataset (UCI Machine Learning Repos
 - **thal** — thalassemia: normal (3), fixed defect / previous infarct (6) or reversible defect / active ischemia (7);
 
 The output is the target variable, which indicates the original diagnosis from 0 to 4, binarized to 0 (no disease) and 1 (with disease) before training.
-
-## Description
-
-The notebook `Heart-Disease_Logistic_Regression.ipynb` contains the full workflow, from exploratory analysis to model evaluation.
 
 ## How to run
 
