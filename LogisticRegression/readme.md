@@ -10,7 +10,7 @@ Construir um modelo de regressão logística para prever a presença de doença 
 
 ## Descrição
 
-O notebook `Heart-Disease_Logistic_Regression.ipynb` contém todo o passo a passo, desde a análise exploratória até a avaliação do modelo e pode ser acessado [aqui]().
+O notebook `Heart-Disease_Logistic_Regression.ipynb` contém todo o passo a passo, desde a análise exploratória até a avaliação do modelo.
 
 ## Conjunto de Dados
 
