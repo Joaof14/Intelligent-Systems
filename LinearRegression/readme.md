@@ -35,6 +35,7 @@ LinearRegression/
 ├── Power_Plant_Linear_Regression.ipynb   # Notebook principal
 ├── readme.md
 └── requirements.txt
+└── main.pdf
 ```
 
 ## 🔍 O que o Notebook Contém
