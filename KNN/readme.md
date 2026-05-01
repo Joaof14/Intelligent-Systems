@@ -1,6 +1,7 @@
 # Classificação de Qualidade de Vinho com k-NN
 
 📓 **[Abra o notebook aqui](./wine_classification_using_knn.ipynb)**
+The Jupyter notebook in this repository is bilingual (Portuguese/English).[Click here](./wine_classification_using_knn.ipynb) to view the analysis.
 
 ## 📚 Contexto Teórico
 

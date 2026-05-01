@@ -1,6 +1,7 @@
 # Previsão de Potência em Usinas de Ciclo Combinado com Regressão Linear
 
 📓 **[Abra o notebook aqui](./Power_Plant_Linear_Regression.ipynb)**
+The Jupyter notebook in this repository is bilingual (Portuguese/English).[Click here](./Power_Plant_Linear_Regression.ipynb) to view the analysis
 
 ## 📚 Contexto Teórico
 
