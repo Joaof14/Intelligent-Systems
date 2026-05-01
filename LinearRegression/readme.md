@@ -1,14 +1,12 @@
-# ⚡ Previsão de Potência em Usinas de Ciclo Combinado com Regressão Linear
+# Previsão de Potência em Usinas de Ciclo Combinado com Regressão Linear
+
+📓 **[Abra o notebook aqui](./Power_Plant_Linear_Regression.ipynb)**
 
 ## 📚 Contexto Teórico
 
-**Regressão Linear** é um modelo fundamental de aprendizado supervisionado que estabelece uma relação linear entre variáveis independentes e uma variável alvo contínua. É amplamente utilizado em engenharia, economia e ciências naturais pela sua simplicidade, interpretabilidade e eficiência computacional.
+Usinas termelétricas de ciclo combinado (UTCC) são instalações de alta complexidade que combinam dois ciclos termodinâmicos distintos para gerar eletricidade com eficiência de até 60%. No entanto, a potência de saída é altamente sensível às condições ambientais, tornando a previsão confiável um desafio crítico para otimização operacional e planejamento de energia. Existe, portanto, uma necessidade real de ferramentas capazes de prever a potência gerada com base em variáveis ambientais em tempo real. É nesse contexto que modelos de aprendizado de máquina são valiosos, permitindo previsões rápidas que informam decisões operacionais e de despacho de energia.
 
-Usinas de ciclo combinado (UTCC) integram dois ciclos termodinâmicos distintos:
-- **Ciclo Brayton** (turbina a gás)
-- **Ciclo Rankine** (turbina a vapor)
-
-Nessa configuração a potência de saída é altamente sensível às condições ambientais, tornando a previsão uma meta a ser alcançada.
+A **Regressão Linear** é um modelo fundamental de aprendizado supervisionado que estabelece uma relação linear entre variáveis independentes e uma variável alvo contínua, sendo amplamente utilizado em engenharia para previsões pela simplicidade, interpretabilidade e eficiência computacional.
 
 ## 🎯 Objetivo
 

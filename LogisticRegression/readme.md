@@ -1,12 +1,16 @@
-# ❤️ Diagnóstico de Doenças Cardíacas com Regressão Logística
+# Diagnóstico de Doenças Cardíacas com Regressão Logística
+
+📓 **[Abra o notebook aqui](./Heart-Disease_Logistic-Regression.ipynb)**
 
 ## 📚 Contexto Teórico
 
-**Regressão Logística** é um modelo de classificação que estima a probabilidade de um evento binário ocorrer. Apesar do nome, é um classificador e não um regressor, amplamente usado em medicina, biologia e ciências sociais. Sua força está na interpretabilidade probabilística e na capacidade de lidar com dados desbalanceados.
-
 Doenças cardiovasculares são a principal causa de morte no mundo, responsáveis por cerca de 18 milhões de óbitos por ano segundo a OMS. O diagnóstico precoce é determinante para o sucesso do tratamento. Existe, portanto, uma necessidade real de ferramentas capazes de estimar o risco de um paciente com base em dados clínicos simples, coletados em consulta de rotina. É nesse contexto que o aprendizado de máquina pode contribuir. Um modelo de classificação treinado com dados históricos de pacientes diagnosticados é capaz de aprender quais combinações de variáveis clínicas estão associadas à presença de doença cardíaca e aplicar esse aprendizado a novos pacientes.
 
-## Objetivo
+A **Regressão Logística** é um modelo de classificação que estima a probabilidade de um evento binário ocorrer, sendo um classificador amplamente usado em medicina, biologia e ciências sociais.
+
+
+
+## 🎯 Objetivo
 
 Construir um modelo de regressão logística para prever a presença de doença cardíaca utilizando dados clínicos.
 
@@ -14,7 +18,7 @@ Construir um modelo de regressão logística para prever a presença de doença 
 
 O notebook `Heart-Disease_Logistic_Regression.ipynb` contém todo o passo a passo, desde a análise exploratória até a avaliação do modelo.
 
-## Conjunto de Dados
+## 📊 Dataset
 
 O projeto utiliza o dataset Heart Disease Cleveland (UCI Machine Learning Repository – disponível em https://archive.ics.uci.edu/dataset/45/heart+disease), com registros de 303 pacientes e 13 variáveis clínicas. Os diagnósticos foram confirmados por cateterismo cardíaco, o que garante rótulos confiáveis. As variáveis incluem:
 
