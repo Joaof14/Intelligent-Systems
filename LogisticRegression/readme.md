@@ -1,119 +1,113 @@
-# Prática: Regressão Logística — Diagnóstico de Doenças Cardíacas
+# ❤️ Diagnóstico de Doenças Cardíacas com Regressão Logística
 
-## Introdução
+## 📚 Contexto Teórico
 
-Doenças cardiovasculares são a principal causa de morte no mundo, responsáveis por cerca de 18 milhões de óbitos por ano segundo a OMS. O diagnóstico precoce é determinante para o sucesso do tratamento. Existe, portanto, uma necessidade real de ferramentas capazes de estimar o risco de um paciente com base em dados clínicos simples, coletados em consulta de rotina. É nesse contexto que o aprendizado de máquina pode contribuir. Um modelo de classificação treinado com dados históricos de pacientes diagnosticados é capaz de aprender quais combinações de variáveis clínicas estão associadas à presença de doença cardíaca e aplicar esse aprendizado a novos pacientes.
+**Regressão Logística** é um modelo de classificação que estima a probabilidade de um evento binário ocorrer. Apesar do nome, é um classificador e não um regressor, amplamente usado em medicina, biologia e ciências sociais. Sua força está na interpretabilidade probabilística e na capacidade de lidar com dados desbalanceados.
 
-## Objetivo
+Doenças cardiovasculares são a **principal causa de morte no mundo** — cerca de 18 milhões de óbitos anuais (OMS). O diagnóstico precoce é essencial para o sucesso do tratamento. ML pode estimar o risco cardíaco usando dados clínicos simples, coletáveis em consulta de rotina — democratizando acesso a ferramentas de diagnóstico auxiliar.
 
-Construir um modelo de regressão logística para prever a presença de doença cardíaca utilizando dados clínicos.
+## 🎯 Objetivo
 
-## Conjunto de Dados
+Desenvolver um modelo de **Regressão Logística** para diagnosticar a presença de doenças cardíacas com base em dados clínicos, ilustrando aplicação prática de ML em medicina preventiva.
 
-O projeto utiliza o dataset Heart Disease Cleveland (UCI Machine Learning Repository – disponível em https://archive.ics.uci.edu/dataset/45/heart+disease), com registros de 303 pacientes e 13 variáveis clínicas. Os diagnósticos foram confirmados por cateterismo cardíaco, o que garante rótulos confiáveis. As variáveis incluem:
+📓 **[Abra o notebook aqui](./Heart-Disease_Logistic_Regression.ipynb)**
 
-- **age** — idade do paciente em anos;
-- **sex** — sexo biológico (1 = masculino, 0 = feminino);
-- **cp** — tipo de dor no peito: angina típica (1), atípica (2), não anginosa (3) ou assintomático (4);
-- **trestbps** — pressão arterial em repouso em mmHg;
-- **chol** — colesterol sérico total em mg/dl;
-- **fbs** — glicemia em jejum acima de 120 mg/dl (1 = sim, 0 = não);
-- **restecg** — resultado do ECG em repouso: normal (0), alteração na onda ST-T (1) ou hipertrofia ventricular (2);
-- **thalach** — frequência cardíaca máxima atingida no teste de esforço;
-- **exang** — angina induzida por exercício (1 = sim, 0 = não);
-- **oldpeak** — depressão do segmento ST durante o esforço, indicador de isquemia;
-- **slope** — inclinação do segmento ST no pico do esforço: ascendente (1), plano (2) ou descendente (3);
-- **ca** — número de artérias coronárias com obstrução visível na fluoroscopia (0 a 3);
-- **thal** — cintilografia de tálio: normal (3), defeito fixo / infarto prévio (6) ou defeito reversível / isquemia ativa (7);
+## 📊 Dataset
 
-A saída é a variável target, que indica o diagnóstico original de 0 a 4, binarizado para 0 (sem doença) e 1 (com doença) antes do treinamento.
+O projeto utiliza o **UCI Heart Disease Cleveland Dataset**:
+- **303 pacientes** com diagnósticos confirmados por cateterismo cardíaco
+- **13 variáveis clínicas** diversas
+- **Classificação binária** (com/sem doença)
 
-## Descrição
+**Variáveis Clínicas:**
+- **age** — Idade em anos
+- **sex** — Sexo biológico (1=masculino, 0=feminino)
+- **cp** — Tipo de dor no peito (1-4: típica a assintomática)
+- **trestbps** — Pressão arterial em repouso (mmHg)
+- **chol** — Colesterol sérico total (mg/dl)
+- **fbs** — Glicemia em jejum > 120 mg/dl (1=sim, 0=não)
+- **restecg** — Resultado do ECG em repouso (0-2)
+- **thalach** — Frequência cardíaca máxima no teste de esforço
+- **exang** — Angina induzida por exercício (1=sim, 0=não)
+- **oldpeak** — Depressão do segmento ST (indicador de isquemia)
+- **slope** — Inclinação do ST (1-3: ascendente a descendente)
+- **ca** — Artérias coronárias obstruídas (0-3)
+- **thal** — Cintilografia de tálio (3=normal, 6=infarto, 7=isquemia)
 
-O notebook `Heart-Disease_Logistic_Regression.ipynb` contém todo o passo a passo, desde a análise exploratória até a avaliação do modelo.
+**Alvo:** Presença de doença cardíaca (0=não, 1=sim)
 
-## Como executar
+## 📁 Estrutura do Projeto
 
-1. Abra o notebook `Heart-Disease_Logistic_Regression.ipynb` no Jupyter Notebook ou Jupyter Lab.
-2. Execute as células sequencialmente, seguindo as instruções e comentários.
-3. Analise os resultados e gráficos gerados ao final.
-
-## Requisitos
-
-- Python 3.x
-- Jupyter Notebook
-- Bibliotecas: pandas, numpy, matplotlib, scikit-learn
-
-Para instalar as dependências, execute:
-
-```bash
-pip install pandas numpy matplotlib scikit-learn
+```
+LogisticRegression/
+├── Heart-Disease_Logistic_Regression.ipynb   # Notebook principal
+├── readme.md
+└── requirements.txt
 ```
 
-## Referências
+## 🔍 O que o Notebook Contém
+
+1. **Carregamento e Limpeza** — Tratamento de dados clínicos reais
+2. **Análise Exploratória (EDA)** — Distribuições de variáveis por diagnóstico
+3. **Pré-processamento** — Normalização, encoding e tratamento de desbalanceamento
+4. **Divisão Treino/Teste** — Estratégia com stratificação
+5. **Treinamento da Regressão Logística** — Com validação cruzada
+6. **Avaliação** — Acurácia, precisão, recall, F1-score, ROC-AUC
+7. **Matriz de Confusão** — Análise de falsos positivos/negativos
+8. **Curva ROC** — Visualização de trade-offs sensibilidade/especificidade
+
+## 🚀 Como Executar
+
+### 1. Instale as Dependências
+
+```bash
+# A partir da raiz do repositório
+pip install -r requirements.txt
+```
+
+### 2. Inicie o Jupyter
+
+```bash
+jupyter lab
+# ou
+jupyter notebook
+```
+
+### 3. Abra e Execute o Notebook
+
+Navegue para `LogisticRegression/Heart-Disease_Logistic_Regression.ipynb` e execute as células sequencialmente.
+
+## 📦 Requisitos
+
+- Python 3.8+
+- pandas
+- numpy
+- matplotlib
+- scikit-learn
+- seaborn (opcional, para visualizações avançadas)
+
+## 💡 Métricas Importantes em Medicina
+
+Para problemas clínicos, é crítico considerar:
+- **Sensibilidade (Recall)** — Evitar falsos negativos (não perder casos)
+- **Especificidade** — Evitar alarmes falsos
+- **ROC-AUC** — Desempenho geral balanceado
+
+Este notebook enfatiza essas métricas.
+
+## 📚 Referências
 
 - [UCI Machine Learning Repository: Heart Disease Dataset](https://archive.ics.uci.edu/dataset/45/heart+disease)
+- [scikit-learn Logistic Regression](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
+
+## 🎓 Próximos Passos
+
+- Explorar dados desbalanceados com técnicas como SMOTE
+- Comparar com outros classificadores (Random Forest, SVM, Neural Networks)
+- Implementar interpretabilidade com SHAP ou LIME
+- Criar API de predição com Flask/FastAPI para uso clínico
+- Validar com dados de novos hospitais (generalização)
 
 ---
 
-Disciplina: Sistemas Inteligentes — 2026
-
-# Practice: Logistic Regression — Heart Disease Diagnosis
-
-## Introduction
-
-Cardiovascular diseases are the leading cause of death worldwide, responsible for about 18 million deaths per year according to the WHO. Early diagnosis is crucial for successful treatment. Therefore, there is a real need for tools capable of estimating a patient's risk based on simple clinical data collected during routine consultations. It is in this context that machine learning can contribute. A classification model trained with historical data from diagnosed patients is able to learn which combinations of clinical variables are associated with the presence of heart disease and apply this learning to new patients.
-
-## Objective
-
-Build a logistic regression model to predict the presence of heart disease using clinical data.
-
-## Dataset
-
-The project uses the Heart Disease Cleveland dataset (UCI Machine Learning Repository – available at https://archive.ics.uci.edu/dataset/45/heart+disease), with records from 303 patients and 13 clinical variables. The diagnoses were confirmed by cardiac catheterization, which ensures reliable labels. The variables include:
-
-- **age** — patient's age in years;
-- **sex** — biological sex (1 = male, 0 = female);
-- **cp** — type of chest pain: typical angina (1), atypical (2), non-anginal (3) or asymptomatic (4);
-- **trestbps** — resting blood pressure in mmHg;
-- **chol** — serum cholesterol total in mg/dl;
-- **fbs** — fasting blood sugar > 120 mg/dl (1 = yes, 0 = no);
-- **restecg** — resting ECG result: normal (0), ST-T wave abnormality (1) or left ventricular hypertrophy (2);
-- **thalach** — maximum heart rate achieved during exercise test;
-- **exang** — exercise-induced angina (1 = yes, 0 = no);
-- **oldpeak** — ST segment depression during exercise, indicator of ischemia;
-- **slope** — slope of the ST segment at peak exercise: upsloping (1), flat (2) or downsloping (3);
-- **ca** — number of major vessels colored by fluoroscopy (0-3);
-- **thal** — thalassemia: normal (3), fixed defect / previous infarct (6) or reversible defect / active ischemia (7);
-
-The output is the target variable, which indicates the original diagnosis from 0 to 4, binarized to 0 (no disease) and 1 (with disease) before training.
-
-## Description
-
-The notebook `Heart-Disease_Logistic_Regression.ipynb` contains the full workflow, from exploratory analysis to model evaluation.
-
-## How to run
-
-1. Open the notebook `Heart-Disease_Logistic_Regression.ipynb` in Jupyter Notebook or Jupyter Lab.
-2. Run the cells sequentially, following the instructions and comments.
-3. Analyze the results and generated plots at the end.
-
-## Requirements
-
-- Python 3.x
-- Jupyter Notebook
-- Libraries: pandas, numpy, matplotlib, scikit-learn
-
-To install the dependencies, run:
-
-```bash
-pip install pandas numpy matplotlib scikit-learn
-```
-
-## References
-
-- [UCI Machine Learning Repository: Heart Disease Dataset](https://archive.ics.uci.edu/dataset/45/heart+disease)
-
----
-
-Intelligent Systems Course — 2026
+**Disciplina:** Sistemas Inteligentes — 2026

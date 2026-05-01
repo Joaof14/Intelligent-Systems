@@ -1,101 +1,102 @@
-# Prática: Regressão Linear — Previsão de Potência de Usina
+# ⚡ Previsão de Potência em Usinas de Ciclo Combinado com Regressão Linear
 
-## Introdução e Contexto
+## 📚 Contexto Teórico
 
-Uma usina termoelétrica de ciclo combinado (UTCC) é uma instalação de alta eficiência que combina turbinas a gás e a vapor para gerar eletricidade. Ela reaproveita o calor dos gases de exaustão da turbina a gás (ciclo Brayton) para produzir vapor em uma caldeira, acionando uma segunda turbina (ciclo Rankine), aumentando significativamente o rendimento. A principal vantagem é a eficiência energética, que pode chegar a 60%, reduzindo as emissões de gases de efeito estufa.
-Embora apresente alta eficiência, o principal desafio técnico no uso de uma usina UTCC reside na integração, sincronização e operação conjunta de dois ciclos termodinâmicos distintos (ciclo Brayton e ciclo Rankine) para funcionar de forma eficiente. Assim sendo, a potência elétrica de saída (PE) é altamente sensível às condições ambientais.
+**Regressão Linear** é um modelo fundamental de aprendizado supervisionado que estabelece uma relação linear entre variáveis independentes e uma variável alvo contínua. É amplamente utilizado em engenharia, economia e ciências naturais pela sua simplicidade, interpretabilidade e eficiência computacional.
 
-## Objetivo
+Usinas de ciclo combinado (UTCC) integram dois ciclos termodinâmicos distintos:
+- **Ciclo Brayton** (turbina a gás)
+- **Ciclo Rankine** (turbina a vapor)
 
-Aplicar o modelo de Regressão Linear para prever a potência gerada por uma usina a partir de variáveis ambientais, utilizando um conjunto de dados real.
+Nessa configuração a potência de saída é altamente sensível às condições ambientais, tornando a previsão uma meta a ser alcançada.
 
-## Conjunto de Dados
+## 🎯 Objetivo
 
-Para realizar o treinamento do nosso modelo, utilizamos o dataset UCI CCPP (disponível em https://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant). O dataset contém 9.568 amostras coletadas ao longo de 6 anos. Cada amostra possui as seguintes variáveis:
+Desenvolver um modelo de **Regressão Linear** para prever a potência elétrica gerada por uma usina de ciclo combinado com base em variáveis ambientais reais, demonstrando aplicação prática de ML em engenharia energética.
 
-- **AT (Ambient Temperature)**: Temperatura em °C. Afeta a densidade do ar e a eficiência da combustão.
-- **V (Exhaust Vacuum)**: Vácuo de escape em cm Hg. Relacionado à pressão na turbina a vapor.
-- **AP (Ambient Pressure)**: Pressão atmosférica em mbar.
-- **RH (Relative Humidity)**: Umidade relativa em percentagem.
-- **PE (Net Hourly Electrical Energy Output)**: A variável alvo em MW (MegaWatts).
+📓 **[Abra o notebook aqui](./Power_Plant_Linear_Regression.ipynb)**
 
-## Descrição
+## 📊 Dataset
 
-Neste experimento, utilizamos um dataset contendo informações como temperatura, pressão, umidade e vácuo para prever a potência elétrica gerada. O notebook `Power_Plant_Linear_Regression.ipynb` contém todo o passo a passo, desde a análise exploratória até a avaliação do modelo.
+O projeto utiliza o **UCI CCPP Dataset**, coletado ao longo de 6 anos:
+- **9.568 amostras** de plantas em operação real
+- **4 variáveis ambientais** de entrada
+- **1 variável alvo** (potência elétrica)
 
-## Como executar
+**Variáveis:**
+- **AT** (Ambient Temperature) — Temperatura em °C
+- **V** (Exhaust Vacuum) — Vácuo de escape em cm Hg
+- **AP** (Ambient Pressure) — Pressão atmosférica em mbar
+- **RH** (Relative Humidity) — Umidade relativa em %
+- **PE** (Power Output) — Potência elétrica em MW ⭐ **(alvo)**
 
-1. Abra o notebook `Power_Plant_Linear_Regression.ipynb` no Jupyter Notebook ou Jupyter Lab.
-2. Execute as células sequencialmente, seguindo as instruções e comentários.
-3. Analise os resultados e gráficos gerados ao final.
+## 📁 Estrutura do Projeto
 
-## Requisitos
-
-- Python 3.x
-- Jupyter Notebook
-- Bibliotecas: pandas, numpy, matplotlib, scikit-learn
-
-Para instalar as dependências, execute:
-
-```bash
-pip install pandas numpy matplotlib scikit-learn
+```
+LinearRegression/
+├── Power_Plant_Linear_Regression.ipynb   # Notebook principal
+├── readme.md
+└── requirements.txt
 ```
 
-## Referências
+## 🔍 O que o Notebook Contém
 
-- [UCI Machine Learning Repository: Combined Cycle Power Plant Data Set](https://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant)
+1. **Análise Exploratória (EDA)** — Distribuições, correlações e estatísticas
+2. **Pré-processamento** — Normalização e preparação de dados
+3. **Divisão Treino/Teste** — Estratégia apropriada para regressão
+4. **Treinamento do Modelo** — Regressão Linear com scikit-learn
+5. **Avaliação** — R², MAE, RMSE e visualizações de desempenho
+6. **Interpretação** — Análise dos coeficientes e impacto de variáveis
+
+## 🚀 Como Executar
+
+### 1. Instale as Dependências
+
+```bash
+# A partir da raiz do repositório
+pip install -r requirements.txt
+```
+
+### 2. Inicie o Jupyter
+
+```bash
+jupyter lab
+# ou
+jupyter notebook
+```
+
+### 3. Abra e Execute o Notebook
+
+Navegue para `LinearRegression/Power_Plant_Linear_Regression.ipynb` e execute as células sequencialmente.
+
+## 📦 Requisitos
+
+- Python 3.8+
+- pandas
+- numpy
+- matplotlib
+- scikit-learn
+
+## 💡 Resultados Esperados
+
+- Identificar quais variáveis ambientais mais afetam a potência
+- Avaliar qualidade da previsão linear em contexto energético real
+- Comparar performance com modelos não-lineares em trabalhos futuros
+
+## 📚 Referências
+
+- [UCI Machine Learning Repository: Combined Cycle Power Plant](https://archive.ics.uci.edu/dataset/294/combined+cycle+power+plant)
+- [scikit-learn Linear Regression](https://scikit-learn.org/stable/modules/linear_model.html#ordinary-least-squares)
+- [Pinar Tüfekci, 2014 — Prediction of full load electrical power of a base load operated combined cycle power plant](https://www.sciencedirect.com/science/article/abs/pii/S0142061513002111)
+
+## 🎓 Próximos Passos
+
+- Testar modelos não-lineares (Random Forest, Gradient Boosting)
+- Implementar validação cruzada para estimativas mais robustas
+- Criar pipeline completo com pré-processamento automatizado
+- Salvar modelo treinado com `joblib` para uso em produção
+- Explorar feature engineering para melhorar desempenho
 
 ---
 
-Disciplina: Sistemas Inteligentes — 2026
-
-# Practice: Linear Regression — Power Plant Output Prediction
-
-## Introduction and Context
-
-A combined cycle power plant (CCPP) is a high-efficiency facility that combines gas and steam turbines to generate electricity. It reuses the heat from the exhaust gases of the gas turbine (Brayton cycle) to produce steam in a boiler, driving a second turbine (Rankine cycle), significantly increasing efficiency. The main advantage is energy efficiency, which can reach 60%, reducing greenhouse gas emissions.
-Although it has high efficiency, the main technical challenge in using a CCPP lies in the integration, synchronization, and joint operation of two distinct thermodynamic cycles (Brayton and Rankine cycles) to function efficiently. Thus, the electrical power output (PE) is highly sensitive to environmental conditions.
-
-## Objective
-
-Apply the Linear Regression model to predict the power generated by a plant based on environmental variables, using a real dataset.
-
-## Dataset
-
-To train our model, we use the UCI CCPP dataset (available at https://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant). The dataset contains 9,568 samples collected over 6 years. Each sample has the following variables:
-
-- **AT (Ambient Temperature)**: Temperature in °C. Affects air density and combustion efficiency.
-- **V (Exhaust Vacuum)**: Exhaust vacuum in cm Hg. Related to pressure in the steam turbine.
-- **AP (Ambient Pressure)**: Atmospheric pressure in mbar.
-- **RH (Relative Humidity)**: Relative humidity in percentage.
-- **PE (Net Hourly Electrical Energy Output)**: The target variable in MW (MegaWatts).
-
-## Description
-
-In this experiment, we use a dataset with information such as temperature, pressure, humidity, and vacuum to predict the electric power generated. The notebook `Power_Plant_Linear_Regression.ipynb` contains the full workflow, from exploratory analysis to model evaluation.
-
-## How to run
-
-1. Open the notebook `Power_Plant_Linear_Regression.ipynb` in Jupyter Notebook or Jupyter Lab.
-2. Run the cells sequentially, following the instructions and comments.
-3. Analyze the results and generated plots at the end.
-
-## Requirements
-
-- Python 3.x
-- Jupyter Notebook
-- Libraries: pandas, numpy, matplotlib, scikit-learn
-
-To install the dependencies, run:
-
-```bash
-pip install pandas numpy matplotlib scikit-learn
-```
-
-## References
-
-- [UCI Machine Learning Repository: Combined Cycle Power Plant Data Set](https://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant)
-
----
-
-Intelligent Systems Course — 2026
+**Disciplina:** Sistemas Inteligentes — 2026

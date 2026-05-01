@@ -1,14 +1,10 @@
 # 🍷 Classificação de Qualidade de Vinho com k-NN
 
-## 📚 Contexto Teórico
-
-O algoritmo **k-Nearest Neighbors (k-NN)** é um método de aprendizado supervisionado baseado em instância que classifica novos dados analisando os k vizinhos mais próximos no espaço de features. É simples, interpretável e eficaz para problemas de classificação, especialmente em datasets de tamanho moderado. Este projeto demonstra sua aplicação em dados reais de qualidade de vinho.
+📓 **[Abra o notebook aqui](./wine_classification_using_knn.ipynb)**
 
 ## 🎯 Objetivo
 
-Implementar o algoritmo **k-NN** para classificar a qualidade de vinhos com base em suas características físico-químicas, demonstrando análise exploratória de dados, pré-processamento, validação cruzada e otimização de hiperparâmetros.
-
-📓 **[Abra o notebook aqui](./wine_classification_using_knn.ipynb)**
+Implementar o algoritmo **k-Nearest Neighbors (k-NN)** para classificar a qualidade de vinhos com base em suas características físico-químicas. Este projeto demonstra análise exploratória de dados, pré-processamento, validação cruzada e otimização de hiperparâmetros.
 
 ## 📊 Dataset
 

@@ -15,11 +15,36 @@ Registrar e organizar os códigos, experimentos e relatórios das atividades pr�
 
 ## Estrutura do Repositório
 
-- **LinearRegression/**: Prática sobre Regressão Linear aplicada a dados reais (exemplo: previsão de potência de uma usina).
-  - `Power_Plant_Linear_Regression.ipynb`: Notebook com o desenvolvimento da prática.
-  - `readme.md`: Detalhes e instruções específicas da prática.
+```
+Intelligent-Systems/
+├── KNN/                                          # k-Nearest Neighbors
+│   ├── wine_classification_using_knn.ipynb      # Notebook principal
+│   ├── README.md                                # Instruções
+│   └── data/
+│       ├── p03_winequality-red.csv
+│       └── p03_winequality-white.csv
+├── LinearRegression/                            # Regressão Linear
+│   ├── Power_Plant_Linear_Regression.ipynb      # Notebook principal
+│   ├── readme.md                                # Instruções
+│   └── requirements.txt
+├── LogisticRegression/                          # Regressão Logística
+│   ├── Heart-Disease_Logistic_Regression.ipynb # Notebook principal
+│   ├── readme.md                                # Instruções
+│   └── requirements.txt
+├── README.md                                    # Este arquivo
+├── LICENSE
+└── workflow.md
+```
 
-Outras pastas podem ser adicionadas conforme novas práticas forem realizadas.
+### Práticas Incluídas
+
+| Pasta | Algoritmo | Aplicação | Dataset |
+|-------|-----------|-----------|----------|
+| **KNN** | k-Nearest Neighbors | Classificação de Qualidade de Vinho | UCI Wine Quality |
+| **LinearRegression** | Regressão Linear | Previsão de Potência de Usina | UCI CCPP |
+| **LogisticRegression** | Regressão Logística | Diagnóstico de Doenças Cardíacas | UCI Heart Disease |
+
+Outras práticas podem ser adicionadas conforme novas atividades forem realizadas.
 
 ## Como usar
 
@@ -49,9 +74,34 @@ To register and organize the code, experiments, and reports from the practical a
 
 ## Repository Structure
 
-- **LinearRegression/**: Linear Regression practice applied to real data (e.g., power plant output prediction).
-  - `Power_Plant_Linear_Regression.ipynb`: Notebook with the practice development.
-  - `readme.md`: Details and specific instructions for the practice.
+```
+Intelligent-Systems/
+├── KNN/                                         # k-Nearest Neighbors
+│   ├── wine_classification_using_knn.ipynb     # Main Notebook
+│   ├── README.md                               # Instructions
+│   └── data/
+│       ├── p03_winequality-red.csv
+│       └── p03_winequality-white.csv
+├── LinearRegression/                           # Linear Regression
+│   ├── Power_Plant_Linear_Regression.ipynb     # Main Notebook
+│   ├── readme.md                               # Instructions
+│   └── requirements.txt
+├── LogisticRegression/                         # Logistic Regression
+│   ├── Heart-Disease_Logistic_Regression.ipynb # Main Notebook
+│   ├── readme.md                               # Instructions
+│   └── requirements.txt
+├── README.md                                   # This file
+├── LICENSE
+└── workflow.md
+```
+
+### Practices Included
+
+| Folder | Algorithm | Application | Dataset |
+|--------|-----------|-------------|----------|
+| **KNN** | k-Nearest Neighbors | Wine Quality Classification | UCI Wine Quality |
+| **LinearRegression** | Linear Regression | Power Plant Output Prediction | UCI CCPP |
+| **LogisticRegression** | Logistic Regression | Heart Disease Diagnosis | UCI Heart Disease |
 
 Other folders may be added as new practices are completed.
 
