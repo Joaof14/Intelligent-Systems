@@ -4,61 +4,49 @@
 
 **Regressão Logística** é um modelo de classificação que estima a probabilidade de um evento binário ocorrer. Apesar do nome, é um classificador e não um regressor, amplamente usado em medicina, biologia e ciências sociais. Sua força está na interpretabilidade probabilística e na capacidade de lidar com dados desbalanceados.
 
-Doenças cardiovasculares são a **principal causa de morte no mundo** — cerca de 18 milhões de óbitos anuais (OMS). O diagnóstico precoce é essencial para o sucesso do tratamento. ML pode estimar o risco cardíaco usando dados clínicos simples, coletáveis em consulta de rotina — democratizando acesso a ferramentas de diagnóstico auxiliar.
+Doenças cardiovasculares são a principal causa de morte no mundo, responsáveis por cerca de 18 milhões de óbitos por ano segundo a OMS. O diagnóstico precoce é determinante para o sucesso do tratamento. Existe, portanto, uma necessidade real de ferramentas capazes de estimar o risco de um paciente com base em dados clínicos simples, coletados em consulta de rotina. É nesse contexto que o aprendizado de máquina pode contribuir. Um modelo de classificação treinado com dados históricos de pacientes diagnosticados é capaz de aprender quais combinações de variáveis clínicas estão associadas à presença de doença cardíaca e aplicar esse aprendizado a novos pacientes.
 
-## 🎯 Objetivo
+## Objetivo
 
-Desenvolver um modelo de **Regressão Logística** para diagnosticar a presença de doenças cardíacas com base em dados clínicos, ilustrando aplicação prática de ML em medicina preventiva.
+Construir um modelo de regressão logística para prever a presença de doença cardíaca utilizando dados clínicos.
 
-📓 **[Abra o notebook aqui](./Heart-Disease_Logistic_Regression.ipynb)**
+## Descrição
 
-## 📊 Dataset
+O notebook `Heart-Disease_Logistic_Regression.ipynb` contém todo o passo a passo, desde a análise exploratória até a avaliação do modelo.
 
-O projeto utiliza o **UCI Heart Disease Cleveland Dataset**:
-- **303 pacientes** com diagnósticos confirmados por cateterismo cardíaco
-- **13 variáveis clínicas** diversas
-- **Classificação binária** (com/sem doença)
+## Conjunto de Dados
 
-**Variáveis Clínicas:**
-- **age** — Idade em anos
-- **sex** — Sexo biológico (1=masculino, 0=feminino)
-- **cp** — Tipo de dor no peito (1-4: típica a assintomática)
-- **trestbps** — Pressão arterial em repouso (mmHg)
-- **chol** — Colesterol sérico total (mg/dl)
-- **fbs** — Glicemia em jejum > 120 mg/dl (1=sim, 0=não)
-- **restecg** — Resultado do ECG em repouso (0-2)
-- **thalach** — Frequência cardíaca máxima no teste de esforço
-- **exang** — Angina induzida por exercício (1=sim, 0=não)
-- **oldpeak** — Depressão do segmento ST (indicador de isquemia)
-- **slope** — Inclinação do ST (1-3: ascendente a descendente)
-- **ca** — Artérias coronárias obstruídas (0-3)
-- **thal** — Cintilografia de tálio (3=normal, 6=infarto, 7=isquemia)
+O projeto utiliza o dataset Heart Disease Cleveland (UCI Machine Learning Repository – disponível em https://archive.ics.uci.edu/dataset/45/heart+disease), com registros de 303 pacientes e 13 variáveis clínicas. Os diagnósticos foram confirmados por cateterismo cardíaco, o que garante rótulos confiáveis. As variáveis incluem:
 
-**Alvo:** Presença de doença cardíaca (0=não, 1=sim)
+- **age** — idade do paciente em anos;
+- **sex** — sexo biológico (1 = masculino, 0 = feminino);
+- **cp** — tipo de dor no peito: angina típica (1), atípica (2), não anginosa (3) ou assintomático (4);
+- **trestbps** — pressão arterial em repouso em mmHg;
+- **chol** — colesterol sérico total em mg/dl;
+- **fbs** — glicemia em jejum acima de 120 mg/dl (1 = sim, 0 = não);
+- **restecg** — resultado do ECG em repouso: normal (0), alteração na onda ST-T (1) ou hipertrofia ventricular (2);
+- **thalach** — frequência cardíaca máxima atingida no teste de esforço;
+- **exang** — angina induzida por exercício (1 = sim, 0 = não);
+- **oldpeak** — depressão do segmento ST durante o esforço, indicador de isquemia;
+- **slope** — inclinação do segmento ST no pico do esforço: ascendente (1), plano (2) ou descendente (3);
+- **ca** — número de artérias coronárias com obstrução visível na fluoroscopia (0 a 3);
+- **thal** — cintilografia de tálio: normal (3), defeito fixo / infarto prévio (6) ou defeito reversível / isquemia ativa (7);
 
-## 📁 Estrutura do Projeto
+A saída é a variável target, que indica o diagnóstico original de 0 a 4, binarizado para 0 (sem doença) e 1 (com doença) antes do treinamento.
 
-```
-LogisticRegression/
-├── Heart-Disease_Logistic_Regression.ipynb   # Notebook principal
-├── readme.md
-└── requirements.txt
-```
+## Como executar
 
-## 🔍 O que o Notebook Contém
+1. Abra o notebook `Heart-Disease_Logistic_Regression.ipynb` no Jupyter Notebook ou Jupyter Lab.
+2. Execute as células sequencialmente, seguindo as instruções e comentários.
+3. Analise os resultados e gráficos gerados ao final.
 
-1. **Carregamento e Limpeza** — Tratamento de dados clínicos reais
-2. **Análise Exploratória (EDA)** — Distribuições de variáveis por diagnóstico
-3. **Pré-processamento** — Normalização, encoding e tratamento de desbalanceamento
-4. **Divisão Treino/Teste** — Estratégia com stratificação
-5. **Treinamento da Regressão Logística** — Com validação cruzada
-6. **Avaliação** — Acurácia, precisão, recall, F1-score, ROC-AUC
-7. **Matriz de Confusão** — Análise de falsos positivos/negativos
-8. **Curva ROC** — Visualização de trade-offs sensibilidade/especificidade
+## Requisitos
 
-## 🚀 Como Executar
+- Python 3.x
+- Jupyter Notebook
+- Bibliotecas: pandas, numpy, matplotlib, scikit-learn
 
-### 1. Instale as Dependências
+Para instalar as dependências, execute:
 
 ```bash
 # A partir da raiz do repositório
