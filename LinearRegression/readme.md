@@ -30,7 +30,6 @@ O projeto utiliza o **UCI CCPP Dataset**, coletado ao longo de 6 anos:
 LinearRegression/
 ├── Power_Plant_Linear_Regression.ipynb   # Notebook principal
 ├── README.md                             # Instruções
-└── main.pdf
 ```
 
 ## 🔍 O que o Notebook Contém
