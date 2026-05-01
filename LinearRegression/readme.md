@@ -4,15 +4,11 @@
 
 ## 📚 Contexto Teórico
 
-Usinas termelétricas de ciclo combinado (UTCC) são instalações de alta complexidade que combinam dois ciclos termodinâmicos distintos para gerar eletricidade com eficiência de até 60%. No entanto, a potência de saída é altamente sensível às condições ambientais, tornando a previsão confiável um desafio crítico para otimização operacional e planejamento de energia. Existe, portanto, uma necessidade real de ferramentas capazes de prever a potência gerada com base em variáveis ambientais em tempo real. É nesse contexto que modelos de aprendizado de máquina são valiosos, permitindo previsões rápidas que informam decisões operacionais e de despacho de energia.
-
-A **Regressão Linear** é um modelo fundamental de aprendizado supervisionado que estabelece uma relação linear entre variáveis independentes e uma variável alvo contínua, sendo amplamente utilizado em engenharia para previsões pela simplicidade, interpretabilidade e eficiência computacional.
+Usinas termelétricas de ciclo combinado (UTCC) são instalações de alta complexidade que combinam dois ciclos termodinâmicos distintos para gerar eletricidade com eficiência de até 60%. No entanto, a potência de saída é altamente sensível às condições ambientais, tornando a previsão confiável um desafio crítico para otimização operacional e planejamento de energia. Existe, portanto, uma necessidade real de ferramentas capazes de prever a potência gerada com base em variáveis ambientais em tempo real. A **Regressão Linear**, que aqui utilizamos, é um modelo fundamental de aprendizado supervisionado que estabelece uma relação linear entre variáveis independentes e uma variável alvo contínua, sendo amplamente utilizado em engenharia para previsões pela simplicidade, interpretabilidade e eficiência computacional.
 
 ## 🎯 Objetivo
 
 Desenvolver um modelo de **Regressão Linear** para prever a potência elétrica gerada por uma usina de ciclo combinado com base em variáveis ambientais reais, demonstrando aplicação prática de ML em engenharia energética.
-
-📓 **[Abra o notebook aqui](./Power_Plant_Linear_Regression.ipynb)**
 
 ## 📊 Dataset
 
@@ -33,8 +29,7 @@ O projeto utiliza o **UCI CCPP Dataset**, coletado ao longo de 6 anos:
 ```
 LinearRegression/
 ├── Power_Plant_Linear_Regression.ipynb   # Notebook principal
-├── readme.md
-└── requirements.txt
+├── README.md                             # Instruções
 └── main.pdf
 ```
 
@@ -78,9 +73,9 @@ Navegue para `LinearRegression/Power_Plant_Linear_Regression.ipynb` e execute as
 
 ## 💡 Resultados Esperados
 
-- Identificar quais variáveis ambientais mais afetam a potência
-- Avaliar qualidade da previsão linear em contexto energético real
-- Comparar performance com modelos não-lineares em trabalhos futuros
+- Identificar quais variáveis ambientais mais afetam a potência.
+- Avaliar qualidade da previsão linear em contexto energético real.
+- Comparar performance com modelos não-lineares em trabalhos futuros.
 
 ## 📚 Referências
 

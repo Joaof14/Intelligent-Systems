@@ -4,22 +4,20 @@
 
 ## 📚 Contexto Teórico
 
-A classificação de qualidade de vinho é um desafio crítico na indústria vinifera, envolvendo análise complexa de múltiplas propriedades físico-químicas para determinar a qualidade do produto. Processos manuais de avaliação são caros, subjetivos e demorados. Existe, portanto, uma necessidade real de ferramentas automáticas capazes de classificar vinhos com precisão com base em dados laboratoriais. É nesse contexto que o aprendizado de máquina pode contribuir, desenvolvendo modelos que aprendem padrões nas características químicas para prever a qualidade de forma rápida e consistente.
+A classificação de qualidade de vinho é um desafio crítico na indústria vinífera, envolvendo análise complexa de múltiplas propriedades físico-químicas para determinar a qualidade do produto. Processos manuais de avaliação são caros, subjetivos e demorados. Existe, portanto, uma necessidade real de ferramentas automáticas capazes de classificar vinhos com precisão com base em dados laboratoriais. É nesse contexto que o aprendizado de máquina pode contribuir, desenvolvendo modelos que aprendem padrões nas características químicas para prever a qualidade de forma rápida e consistente.
 
-O **k-Nearest Neighbors (k-NN)** é um algoritmo de classificação não-paramétrico que prediz a classe de novos dados observando os k vizinhos mais próximos no espaço de features, sendo particularmente eficaz para capturar padrões complexos e não-lineares. 
+O **k-Nearest Neighbors (k-NN)**, que aqui utilizamos, é um algoritmo de classificação não-paramétrico que prediz a classe de novos dados observando os k vizinhos mais próximos no espaço de features, sendo particularmente eficaz para capturar padrões complexos e não-lineares.
 
 ## 🎯 Objetivo
 
 Implementar o algoritmo **k-NN** para classificar a qualidade de vinhos com base em suas características físico-químicas, demonstrando análise exploratória de dados, pré-processamento, validação cruzada e otimização de hiperparâmetros.
-
-📓 **[Abra o notebook aqui](./wine_classification_using_knn.ipynb)**
 
 ## 📊 Dataset
 
 O projeto utiliza o **UCI Wine Quality Dataset**, contendo:
 - **9 variáveis físico-químicas** (acidez, álcool, sulfatos, pH, etc.)
 - **Vinhos tinto e branco** em arquivos separados
-- **Classificação de qualidade** como alvo (0-10)
+- **Classificação de qualidade** como alvo (0–10)
 
 **Arquivos de dados:**
 - `data/p03_winequality-red.csv` — 1.599 amostras de vinho tinto
@@ -30,10 +28,10 @@ O projeto utiliza o **UCI Wine Quality Dataset**, contendo:
 ```
 KNN/
 ├── wine_classification_using_knn.ipynb    # Notebook principal
-├── data/
-│   ├── p03_winequality-red.csv
-│   └── p03_winequality-white.csv
-└── README.md
+├── README.md                              # Instruções
+└── data/
+    ├── p03_winequality-red.csv
+    └── p03_winequality-white.csv
 ```
 
 ## 🔍 O que o Notebook Contém
@@ -73,14 +71,14 @@ Navegue para `KNN/wine_classification_using_knn.ipynb` e execute as células seq
 - numpy
 - scikit-learn
 - matplotlib
-- seaborn (opcional, para visualizações)
+- seaborn (opcional, para visualizações avançadas)
 
-## Dicas e Boas Práticas
+## 💡 Dicas e Boas Práticas
 
-- Os CSVs já estão incluídos na pasta `data/` — nenhum download externo necessário
-- Use `random_state` para garantir reprodutibilidade
-- Experimente normalizar as features com `StandardScaler` antes de aplicar k-NN
-- Teste diferentes valores de k para encontrar o melhor desempenho
+- Os CSVs já estão incluídos na pasta `data/` — nenhum download externo necessário.
+- Use `random_state` para garantir reprodutibilidade.
+- Experimente normalizar as features com `StandardScaler` antes de aplicar k-NN.
+- Teste diferentes valores de k para encontrar o melhor desempenho.
 
 ## 📚 Referências
 
