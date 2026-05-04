@@ -1,7 +1,7 @@
 # Diagnóstico de Doenças Cardíacas com Regressão Logística
 
 📓 **[Abra o notebook aqui](./Heart-Disease_Logistic_Regression.ipynb)**
-The Jupyter notebook in this repository is bilingual (Portuguese/English).[Click here](./wine_classification_using_knn.ipynb) to view the analysis.
+The Jupyter notebook in this repository is bilingual (Portuguese/English).[Click here](./Heart-Disease_Logistic_Regression.ipynb) to view the analysis.
 
 ## 📚 Contexto Teórico
 
