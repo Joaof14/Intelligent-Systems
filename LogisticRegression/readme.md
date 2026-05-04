@@ -1,7 +1,7 @@
 # Diagnóstico de Doenças Cardíacas com Regressão Logística
 
-📓 **[Abra o notebook aqui]([./Heart-Disease_Logistic_Regression.ipynb](https://github.com/Joaof14/Intelligent-Systems/blob/main/LogisticRegression/Heart-Disease_Logistic-Regression.ipynb))**
-The Jupyter notebook in this repository is bilingual (Portuguese/English).[Click here]([./Heart-Disease_Logistic_Regression.ipynb](https://github.com/Joaof14/Intelligent-Systems/blob/main/LogisticRegression/Heart-Disease_Logistic-Regression.ipynb)) to view the analysis.
+📓 **[Abra o notebook aqui]([https://github.com/Joaof14/Intelligent-Systems/blob/main/LogisticRegression/Heart-Disease_Logistic-Regression.ipynb])**
+The Jupyter notebook in this repository is bilingual (Portuguese/English).[Click here]([https://github.com/Joaof14/Intelligent-Systems/blob/main/LogisticRegression/Heart-Disease_Logistic-Regression.ipynb]) to view the analysis.
 
 ## 📚 Contexto Teórico
 
